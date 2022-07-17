@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(257deg, 40%, 49%);
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-img-box {
+  background-image: url("./images/bg-mobile.svg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.huddle-logo {
+  width: 18rem;
+  margin: 4rem;
+}
+
+.illustration-mockups {
+  width: 80%;
+  display: block;
+  margin: 3.8rem auto;
+}
+
+.second-part {
+  color: #fff;
+  text-align: center;
+}
+.second-part h1 {
+  font-family: Poppins;
+  width: 60%;
+  margin: 3rem auto;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  font-size: 2.5rem;
+}
+.second-part p {
+  font-family: Open Sans;
+  width: 69%;
+  margin: 0 auto 3rem auto;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+.second-part button {
+  color: hsl(257deg, 40%, 49%);
+  padding: 2rem 9rem;
+  border-radius: 3rem;
+  border: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.second-part button:hover {
+  background-color: hsl(300deg, 69%, 71%);
+}
+
+.icons-box {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  height: 30px;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+.icons-box .fa-brands {
+  border: 1px solid #fff;
+  color: #fff;
+  width: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.icons-box .fa-brands:hover {
+  color: hsl(300deg, 69%, 71%);
+  border-color: hsl(300deg, 69%, 71%);
+}
+
+footer {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  height: 15vh;
+  display: grid;
+  place-items: center;
+}
+footer a {
+  color: inherit;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  body {
+    background-image: url("./images/bg-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .all {
+    height: 100vh;
+    flex-direction: row;
+  }
+  .bg-img-box {
+    background-image: none;
+    width: 100%;
+  }
+  .huddle-logo {
+    margin: 0;
+    width: 30rem;
+    margin-left: 12rem;
+  }
+  .illustration-mockups {
+    margin: 0;
+    margin-left: 10rem;
+    width: 100%;
+  }
+  .second-part {
+    width: 70%;
+    text-align: left;
+  }
+  .second-part h1 {
+    margin: 0;
+    margin-top: 28rem;
+    margin-bottom: 4rem;
+    width: 85%;
+    font-size: 5.6rem;
+  }
+  .second-part button {
+    font-size: 2rem;
+    padding: 2rem 9rem;
+  }
+  .second-part p {
+    margin: 0;
+    width: 84%;
+    line-height: 3.9rem;
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+  }
+  .logo-box {
+    display: flex;
+    align-items: flex-end;
+    height: 17rem;
+  }
+  .illustration-mockups-box {
+    width: 100%;
+  }
+  .illustration-mockups {
+    width: 85%;
+    margin: 0;
+    margin-left: 12.5rem;
+    margin-top: 9.5rem;
+  }
+  .icons-box {
+    margin-top: 30vh;
+    justify-content: flex-end;
+    padding-right: 5%;
+  }
+  footer {
+    font-size: 2.5rem;
+  }
+}
